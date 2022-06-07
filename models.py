@@ -1,0 +1,30 @@
+from typing import Any, Dict
+from pydantic import BaseModel, Field
+
+
+class MarketModuleInput(BaseModel):
+  md : str  = Field(default="", title="Input Name : md")
+  nr_of_hours : int  = Field(default=0, title="Input Name : nr_of_hours")
+  offer_type : str  = Field(default="", title="Input Name : offer_type")
+  prod_diff : str  = Field(default="", title="Input Name : prod_diff")
+  network : str  = Field(default="", title="Input Name : network")
+  el_dependent : str  = Field(default="", title="Input Name : el_dependent")
+  el_price : str  = Field(default="", title="Input Name : el_price")
+  agent_ids : list  = Field(default=[], title="Input Name : agent_ids")
+  agent_types : list  = Field(default=[], title="Input Name : agent_types")
+  objective : str  = Field(default="", title="Input Name : objective")
+  community_settings : Dict[str,Any]  = Field(default={}, title="Input Name : community_settings")
+  gmin : list  = Field(default=[], title="Input Name : gmin")
+  gmax : list  = Field(default=[], title="Input Name : gmax")
+  lmin : list  = Field(default=[], title="Input Name : lmin")
+  lmax : list  = Field(default=[], title="Input Name : lmax")
+  cost : list  = Field(default=[], title="Input Name : cost")
+  util : list  = Field(default=[], title="Input Name : util")
+  co2_emissions : str  = Field(default="", title="Input Name : co2_emissions")
+  is_in_community : str  = Field(default="", title="Input Name : is_in_community")
+  block_offer : str  = Field(default="", title="Input Name : block_offer")
+  is_chp : str  = Field(default="", title="Input Name : is_chp")
+  chp_pars : str  = Field(default="", title="Input Name : chp_pars")
+  gis_data : str  = Field(default="", title="Input Name : gis_data")
+  nodes : list  = Field(default=[], title="Input Name : nodes")
+  edges : list  = Field(default=[], title="Input Name : edges")
