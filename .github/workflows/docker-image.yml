@@ -12,7 +12,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   CTR_USER: ${{ secrets.CTR_USER }}
-  CTR_TOKEN: ${{ secrets.CRT_TOKEN }}
+  CTR_TOKEN: ${{ secrets.CTR_TOKEN }}
 
 
 jobs:
