@@ -29,7 +29,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ env.CTR_USER }}
-          password: ${{ env.CRT_TOKEN }}
+          password: ${{ env.CTR_TOKEN }}
 
       - name: Extract Metadata (tags, labels) for Docker
         id: meta
